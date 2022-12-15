@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> Praktikum Aktorik & Sensorik</title>
+
+</head>
+
+
+<body>
+
+  
+   <div>
+      <nav>
+          <ul>
+
+               <li class="active"><a href="#section1" style="color:white; font-weight: bold ;text-transform: uppercase;display: block;"><i class="fa fa-home"></i>Home</a></li>
+
+              <li><a href="#section2" style="color:white;font-weight: bold;text-transform: uppercase;display: block;">Einführung</a></li>
+ 
+              <li><a href="#section3" style="color:white;font-weight: bold;text-transform: uppercase;display: block;">Versuch</a></li>
+
+              <li><a href="#section4" style="color:white;font-weight: bold;text-transform: uppercase;display: block;">konklusion</a></li>
+
+              <li><a href="#section5" style="color:white;font-weight: bold;text-transform: uppercase;display: block;">Quellen</a></li>
+
+              <li><a href="#footer" style="color:white;font-weight: bold;text-transform: uppercase;display: block;"><i class="fa fa-phone"></i>Kontakt</a></li>
+
+          </ul>
+      </nav>  
+   </div>
+
+  
+
+
+
+
+<div id="section1">
+ 
+   <img src="background.jpg" style="width:100%;">
+
+   <div class="centered"> Versuch A : Drucksensoren</div>
+
+   <h1>1)Abstract:</h1>
+   <p class="text"> Diese Präsentation befasst sich mit Drucksensoren im Allgemeinen, durch verschiedene Experimente ihre Funktionsweise, mechanische und elektrische Eigenschaften und ihre Anwendungen, die zu den häufigsten Arten von Drucksensoren sind. Sie nutzen die Änderung des elektrischen Widerstands eines Materials bei Dehnung, bzw die Verformung eines kristall, um den Druck zu messen.</p>
+    
+</div>
+
+
+
+
+
+
+
+  
+<div id="section2">
+  
+  <h1>2)Einführung:</h1>
+  <p class="text">
+    In diesem Versuch werden die Drucksensoren 26PCDFA6D und 26PCFFA6D von Honeywell zur Druckmessung eingesetzt, wobei sowohl der Messbereich der Sensoren als auch der maximale Druck, 
+   für den die Sensoren spezifiziert sind, berücksichtigt werden.
+  </p>
+  <p class="text">
+    Um die Messwertauflösung zu erhöhen und das Signal-Rausch-Verhältnis zu verbessern, 
+   wird eine analoge Auswerteelektronik zweimal  mit zwei verschiedenen Operationsverstärkern aufgebaut.
+  </p>
+  <p class="text">
+    Der analoge Ausgangswert wird zunächst durch das Messsystem Meilhaus Labjack UE9 digitalisiert und an den PC ausgegeben.
+  </p>
+  <p class="text">
+
+   Die Ausgangsspannung der fingerbedruckten Piezoelektrischen  scheibe wird auf das Oszilloskop übertragen und dort angezeigt.
+  </p>
+  <div class="imgtotext"> 
+    <img src="sensor.jpg">
+    </div>
+
+
+
+
+  <p class="text" style="color:red;">
+  <strong>a)Theorie-Stand der Technik:</strong></p>
+
+  <p class="text">Was ist Druck? Druck ist als Wirkung einer Kraft auf eine Fläche definiert. Die grundlegende Regel des statischen Drucks (P) wird berechnet als Kraft (F) dividiert durch die Fläche (A):</p>
+
+  <p class="text">P=F/A</p>
+  <p class="text">Kraft kann durch Flüssigkeiten, Gase, Dämpfe oder Festkörper erzeugt werden. </p>
+  <p class="text">Die am häufigsten gebrauchten Druckeinheiten sind:</p>
+  <p class="text">1. Pa - [Pascal] in 1 Pa = 1(N/m²)</p>
+  <p class="text">2. Bar - [Bar] in 1 bar = 105</p>
+  <p class="text">3. psi: (pound(-force) per square inch) 1psi=6,894.76Pa</p>
+ 
+
+  <p class="text"><strong> Methoden der Druckmessung:</strong></p>
+
+  <p class="text"><strong>Absoluter Druck:</strong>Die absolute Druckmessung erfolgt gegenüber dem statischen Druck in einem Vakuum (0 Pa),(ZB. atmosphärischer Druck, Vakuumdruck, Höhenmesserdruck).</p>
+  <p class="text"><strong>Relativer Druck:</strong> Relativer Druck wird relativ zum atmosphärischen Luftdruck gemessen. Sowohl der Referenzdruck als auch der zu untersuchende Druck werden vom atmosphärischen Druck beeinflusst,(ZB. Reifendruck , Blutdruck).</p>
+  <p class="text"><strong>Differenzdruck:</strong>Differenzdruck ist dem relativen Druck ähnlich, jedoch dient als Referenz anstelle des atmosphärischen Luftdrucks ein anderer Druckpunkt im System. </p>
+ 
+
+  <p class="text"><strong> Wie funktionieren Drucksensoren?</strong></p>
+
+  <p class="text">Ein Drucksensor gehört zur Gruppe der Druckmessgeräte, elektronische Bauteile, welche als erstes Glied einer Messkette die physikalische Größe Druck (= Kraft pro Fläche) in eine elektrische Ausgangsgröße als Maß für den Druck umformen. </p>
+
+  <p class="text">Die drei am häufigsten verwendeten Arten von Drucksensoren sind die Brückebasierte, variable kapazitive und piezoelektrische Sensoren.</p>
+    
+
+  <p class="text"><strong>Brückenbasierte Drucksensoren:(piezoresistiven Drucksensoren)</strong></p>
+
+  <p class="text">Wheatstone-Brückensensoren (Dehnungsmessung) Die Verformung einer Membran, auf die Druck ausgeübt wird, wird mit Hilfe eines Dehnungsmessstreifens ermittelt.</p>
+  <div class="imgtotext"> 
+    <img src="piezoresis.PNG" style="width:100%;">
+  </div>
+    
+    <p class="text">Die Druckafnehmer haben ein ist eine dünngeätzte Siliziummembrane mit Halbleiterwiderstandsstrukturen. </p>
+    <p class="text">Eine Durchbiegung  der Membrane führt zu Widerstandsänderungen nach dem piezoresistiven Effekt.  </p>
+    <p class="text">Diese sind  druckproportional, reversibel und elektronisch auswertbar.  </p>
+        
+    <p class="text">Die Membranrestdicke bestimmt den zulässigen Druck. mit bekannter Fläche und reagieren auf die Kraft, die auf die Fläche durch Mediendruck ausgeübt wird. Die eingesetzte Kraft verformt die Membran des Druckafnehmers. </p>
+    <p class="text">Die Verformung der Membran wird gemessen und in ein elektrisches Signal umwandelt. </p>
+    <p class="text">Dadurch kann der Druck durch Mikroprozessoren, programmierbare Steuerungen und Computer, sowie andere elektronische Geräte, überwacht werden  </p>
+    
+    <div class="imgtotext"> 
+      <img src="membrane.PNG" style="width:100%;">
+    </div>
+
+    <p class="text"><strong>Kapazitive Drucksensoren</strong></p>
+
+    <p class="text">Ein variabler kapazitativer Drucksensor misst die Änderung in der Kapazität zwischen einer Metallmembran und einer festen Metallplatte. Die Kapazität zwischen zwei Metallplatten ändert sich, wenn sich Abstand zwischen diesen beiden Platten durch ausgeübten Druck ändert.</p>
+
+    <div class="imgtotext"> 
+      <img src="kapazitiv.PNG" style="width:100%;">
+    </div>
+
+    <p class="text"><strong>Piezoelektrische Drucksensoren</strong></p>
+
+    <p class="text">Piezoelektrische Sensoren nutzen den piezoelektrischen Effekt, um Kräfte zu erfassen. Die arbeiten mit den elektrischen Eigenschaften von Quartzkristallen, anstatt mit einem Widerstandssensor. So entsteht durch die Verformung eines Kristalls eine elektrische Spannung, die sich anschließend auswerten und interpretieren lässt. Ein Drucksensor wandelt den Druck in einem System über eine bewegliche Membran zunächst in eine Kraft um.</p>
+    
+    <div class="imgtotext"> 
+      <img src="piezoele.PNG" style="width:100%;">
+    </div>   
+    
+    <p class="text"><strong>Auswählen der passenden Art von Drucksensor:(Vorteile+ / Nachteile-)</strong></p>
+
+    <p class="text"><strong>Brückenbasierte oder piezoresistive Sensoren: </strong></p>
+
+    <p class="text">+werden aufgrund ihrer einfachen Bauweise und Robustheit die am häufigsten verwendet.+werden aufgrund ihrer einfachen Bauweise und Robustheit die am häufigsten verwendet.</p>
+    <p class="text">+Diese Merkmale und geringe Kosten machen diese Sensoren ideal für Systeme mit hoher Kanalanzahl. </p>
+
+
+    <p class="text"><strong>Kapazitative Drucksensoren:</strong></p>
+    <p class="text">+erfasst nahezu alle Materialien</p>
+    <p class="text">+stabiler und linear</p>
+    <p class="text">-jedoch temperaturempfindlicher und schwieriger zu implementieren als die meisten anderen Drucksensoren.</p>
+
+
+    <p class="text"><strong>Piezoelektrische Sensoren :</strong></p>
+    <p class="text">+reagieren schnell auf Druckänderungen.</p>
+    <p class="text">-Teuer und der empfindliche Kristallkern muss geschützt werden</p>
+
+
+    <p class="text" style="color:red;"><strong>b) Piezoelektrizität:</strong></p>
+
+  <p class="text">Piezoelektrizität ist eine Ladungstrennung an der Oberfläche von bestimmten Kristallen infolge einer Verformung (Deformation).</p>
+  <p class="text">Durch die Deformation werden in piezoelektrischen Kristallen elektrisch positive und negative Gitterbausteine so verschoben, dass ein elektrisches Dipolmoment entsteht. Dieses Dipolmoment führt zum Auftreten von elektrischer Ladung an der Oberfläche.</p>
+  <p class="text">Wichtige piezoelektrische Kristalle sind Quarz, Turmalin, Seignettesalze und Zinkblende. Auf der Piezoelektrizität basieren verschiedene Drucksensoren</p>
+  <p class="text">Die Umkehrung der Piezoelektrizität ist die Formänderung eines Kristalls durch Anlegen von elektrischen Feldern. In der Technik nutzt man dies z. B. in Quarzuhren, Mikromotoren (Aktoren) und Lautsprechern für Schall und Ultraschall.</p>
+
+  <div class="imgtotext"> 
+    <img src="kristallpiezo.PNG" style="width:100%;">
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div id="section3">
+    <h1>Versuchsdurchführung und Ergebnisse:</h1>
+
+  <p class="text" style="color:red;"><strong> 1) Material: </strong></p>
+
+  <p class="text"><strong>•	Spannungsversorgung</strong></p>
+
+<p class="text"><strong>•	Breadbord</strong></p>
+
+
+<p class="text"><strong> •	Drucksensor 26PCDFA6D von die Firma  Honeywell (Datenblatthref)
+</strong></p>
+
+<p class="text"><strong>•	Operationsverstärker lm741 und icl765 (datenblatt)</strong></p>
+
+
+<p class="text"><strong>• Kleine Luftpumpe(als druck hydrostatische kraft)</strong></p>
+<p class="text"><strong>
+•	Elektrische Bauteile: Resistoren/Kondensatoren</strong></p>
+<p class="text"><strong>
+•	Jumper wires/ kabeln </strong></p>
+<p class="text"><strong>
+•	Meilhaus Labjack UE9 </strong></p>
+<p class="text"><strong>
+•	PC, Software Labjack
+</strong></p>
+<p class="text"><strong>
+•	piezoelektrischen Scheibe
+</strong></p>
+<p class="text"><strong>
+•	Oszilloskop
+</strong></p>
+<p class="text"><strong>• Multimeter
+</strong></p>
+
+
+
+
+  <p class="text" style="color:red;"><strong>2) Versuchsaufbau:</strong></p>
+  <p class="text">Man hat bei den jeweiligen Versuchen ein Messsystem verwendet, das kann eine analoge Auswerteelektronik durch eine selbst gebastelte Schaltung oder noch dazu mit hilfe ein Meilhaus Labjack UE9 soll der analoge Ausgangswert digitalisiert und am PC ausgegeben werden. </p>
+
+  <p class="text"><strong>Allgemeine Abbildung  Versuchsaufbau:</strong></p>
+  <p class="text"> ->Messkette für Elektronische Drucksensoren</p>
+
+  <div class="imgtotext"> 
+    <img src="allgg.PNG" style="width:100%;">
+  </div>
+
+
+  <p class="text"style="color:red;"><strong> 3)Versuchsdurchführung und Auswertung: </strong></p>
+
+  <p class="text">a)Basierend auf dem Datenblatt des Drucksensors 26PCDFA6D der Firma Honeywell verfügt über einen Spannungsversorgungsbereich von min2,5V bis maximal 16V.</p>
+  <p class="text">Zum Beispiel definiert eine 26PCDFA6D-Katalogliste einen Miniatur-Niederdrucksensor der 26PC-Serie, kompensiert/ unverstärkt, 30 psi Druckbereich, mit Null-Offset max 0 1,5, Fluorsilikon-Dichtungsmaterial, Nadeldruckanschluss für absoluten Druck, 1 x 4 SIP, 15,2 mm [0,60 in] Konfiguration mit langem Abschluss, mit normalem Polaritätsausgang und Manometerdruckmessung . (Spezifikation der Sensoren aus Datenblatt)</p>
+
+  <div class="imgtotext"> 
+    <img src="pin.PNG" style="width:100%;">
+  </div>
+
+  <p class="text">
+Zur Druckmessung gibt es verschiedene Möglichkeiten, Um Druck elektronisch erfassbar zu machen, wird ein piezokeramischer Kristall auf eine massive Basis gesetzt und mit einer Membran abgedeckt, so dass bei Auslenkung der Membran der Kristall zentral belastet wird ermittelt und der dadurch veränderte Widerstand gemessen. 
+</p>
+  <p class="text">Als erstes wird die Widerstandsänderung direkt an der Ausgangsklemme (jeweils pin2 : OutputA pin4: Output B) mit einem Multimeter gemessen. Der Sensor wird an ein El Triple Netzteil am Pin1:Vcc und Pin3:Ground angeschlossen und mit einem Spanunng des 15V eingestellt.</p>
+
+  <div class="imgtotext"> 
+    <img src="spannung.jpeg" style="width:100%;">
+  </div>
+
+  <p class="text">Als Druck wird eine hydrostatische Kraft mit Hilfe einer Luftpumpe am Eingang des Sensors aufgebracht, da es pro Oberfläche der Membran eine Kraft gibt, diese liegt im Test etwa zwischen 0bar und 3 bar.</p>
+  <p class="text">Misst man mit dem Multimeter die Ausgangsspannung, zeigt das Multimeter sehr kleine Werte im Bereich von mV an.</p>
+  <p class="text">Misst man mit dem Multimeter die Ausgangsspannung, zeigt das Multimeter sehr kleine Werte im Bereich von mV an.</p>
+  <p class="text">Da die Dehnungen sich im elastischen Bereich bewegen müssen, sind sie relativ klein (~10-3 , also sind auch die Widerstandsänderungen klein, respektive die Ausgangsspannung der Wheatstonschen-Messbrücke ist auch klein (mV-Bereich); Widerstandsänderungen aufgrund von Temperatureinflüssen werden in beiden Fällen wegkompensiert. Die kleine Ausgangspannung der Messbrücke wird verstärkt, damit sie auch mit einem Messinterface gemessen und registriert werden kann.</p>
+  <p class="text">Zur Erhöhung der Messauflösung von Spannungen und zur Verbesserung des Signal-Rausch-Verhältnisses. Mittels zweier verschiedener Operationsverstärker (741), eines ICL7652B (chopper stabilized) Operationsverstärkers einer zugelassenen Operationsverstärkerschaltung ist eine Signalverarbeitung für die Hardware erforderlich./p>
+  <p class="text">Zunächst soll mit Hilfe eines Operationsverstärkers (741) eine analoge Auswerteelektronik aufgebaut werden. Für diesen Operationsverstärker stellt man eine 15V Spannungsversorgung zur Verfügung, als Schaltung Ein Instrumentenverstärker oder Substrahirerer zur exakten Datenerfassung Die Ausgangsspannung VOUT der Brücke wiederum ist eine Spannung, die proportional zur Widerstandsänderung und somit zum Druck am Sensorelement ist.</p>
+  
+
+  <p class="text">
+    Zu beachten ist, dass VOUT ein Potenzial aufweist, das nominell die Hälfte von VIN beträgt. Hierbei handelt es sich um die Gleichtakt-Signalspannung. Für einen Wandler mit einem maximalen Spannungshub von 50 mV macht ein Spannungsinkrement von einem Prozent 0,5 mV aus. 
+    </p>
+  <p class="text">Die Gemeinsamkeit dieser Wandler besteht darin, dass ihre differenziellen Ausgangspegel im Millivoltbereich liegen, sodass eine Verstärkung erforderlich ist, um sie mit Analog/Digital-Wandlern verwenden zu können. Diese Rolle übernimmt der Instrumentenverstärker (INA).</p>
+
+  <p class="text">wie man ein Kleinsignal einer Wheatstone-Brücke erfasst und verstärkt, bevor es mit Analog/Digital-Wandlern digitalisiert wird.</p>
+  <p class="text">INAs eignen sich ideal zur Verstärkung von Differenzsignalen. Sie bieten eine hohe Verstärkung, eine hohe Gleichtaktunterdrückung sowie eine hohe Eingangsimpedanz. Da sie in verschiedenen Konfigurationen erhältlich sind, muss man verstehen, wie sie funktionieren, was die wichtigen Spezifikationen sind und worauf bei ihrer Verwendung zu achten ist.</p>
+  
+
+  <p class="text">Nun Wiederholt man das gleiche Versuchsaufbau mit einem ICL7652B (Chopper Stabilized) Operationsverstärker. Zusätzlich basiert die Schalung auf dem Datenblatt zwei Kondensatoren dafür.</p>
+  
+  <div class="imgtotextgruppe"> 
+    <img src="schal1.jpeg" style="width:100% ;">
+    <img src="schal2.jpeg" style="width:100% ;">
+  </div>
+
+
+  <p class="text">b)
+    Der LabJack U12 dient zur Datenerfassung/ DAQ. Die Messdaten werden über den USB-Bus an den PC übertragen und mit einer Software eingelesen.
+    </p>
+  <p class="text">Verbindet man nun die verstärkte Ausgangsspannung mit den beiden analogen Eingängen
+    AIN0 und AIN0 des Labjack U12 und kalibrieren das Messsystem um die
+    damit kann man  die Spannungen zwischen Diff0-1 mit der lJlogger-Software auslesen. 
+    </p>
+  <p class="text">Hier die Bilder für die Ergebnisse für beide Op Schaltungen.
+  </p>
+
+  <div class="imgtotextgruppe"> 
+    <img src="labj1.jpeg" style= width:100%;"> 
+    <img src="labj2.jpeg" style="width:100%;">
+  </div>
+
+
+  <p class="text">LabJack U12 Datenerfassung  durch lm(741) Operationsverstärkers: </p>
+
+  <div class="imgtotextbiggruppe"> 
+    <img src="lm741_0bar.PNG" style="width:100%;">
+    <img src="lm741_3_2bar.PNG" style="width:100%;">
+    <img src="lm741_3_9bar.png" style="width:100%;">
+  </div>
+
+  <p class="text">LabJack U12 Datenerfassung durch ICL7652B (Chopper Stabilized) Operationsverstärker: </p>
+
+  <div class="imgtotextbiggruppe"> 
+    <img src="icl765_0bar.PNG" style="width:100%;">
+    <img src="icl765_2_7bar.PNG" style="width:100%;">
+    <img src="icl765_3_2bar.PNG" style="width:100%;">
+
+  </div>
+
+  <p class="text" style="color:red;"><strong>4) Piezoscheibe:</strong></p>
+
+  <p class="text">a)- Wir verbinden die Messingscheibe (hier -polig) mit dem COM-Anschluss,
+    und die Keramik (hier +Polig) mit dem Eingang des Voltmeters.
+    </p>
+
+    <div class="imgtotext"> 
+      <img src="piezosch.jpeg" style="width:100%;">
+    </div>
+
+    <p class="text">- Wenn man mit dem Finger eine Druckkraft auf die Scheibe ausübt, steigen die Spannungswerte im positiven Bereich an und fallen beim Loslassen in den negativen Bereich</p>
+  <p class="text">-> Der Kristall reagiert darauf mit der Erzeugung einer hohen Spannung.</p>
+  <p class="text">-> Dies ist eine Schwingung, d.h. der Kristall gibt durch die mechanische Belastung (hier der Finger) eine Spannung ab, d.h. mechanische Energie wird in elektrische Energie umgewandelt. </p>
+  <p class="text">       Wie genau?
+    Durch den Druck werden die positiven und negativen Gitterelemente so verschoben, dass ein elektrischer Dipol entsteht oder bereits vorhandene Dipole verstärkt werden. Man kann auch sagen, dass der Kristall durch die Verformung polarisiert wird.
+    </p>
+  <p class="text">->Diese vorher elektrisch neutrale Strukturzelle bildet nun einen elektrischen Dipol und damit eine elektrische Spannung. </p>
+  <p class="text">Bemerkung:</p>
+  <p class="text">- Dieser piezoelektrische Effekt (kurz: piezoelektrischer Effekt) kann auch an bekannten Kristallen beobachtet werden. (Die Vorsilbe "Piezo" kommt aus dem Griechischen piezein, drücken, quetschen).</p>
+  <p class="text">- Wir können diesen Effekt auch als Vibrationssensor nutzen.</p>
+ 
+  <div class="imgtotextgruppe"> 
+    <img src="piezoscheibe.PNG" style="width:100%;"> 
+    <img src="piezoelement.PNG" style="width:100%;">
+  </div>
+ 
+
+  <p class="text">b)
+    Die Ausgangsspannung der mit einem Fingerabdruck versehenen piezoelektrischen Scheibe wird auf das Oszilloskop übertragen, wo der Spannungsverlauf über die Zeit angezeigt wird (Abb.).
+    </p>
+
+  <p class="text">Das Ergebnis:</p>
+  <p class="text">->Bei piezoelektrischen Kristallen reicht ein kleiner Druck und man kann einen Ausschlag auf dem Oszilloskop erkennen.</p>
+  <p class="text">Die Auswertung:</p>
+  <p class="text">Der eigentliche Effekt liegt also in der Formveränderung des Kristalls, wenn er verformt wird. Die Polarisierung tritt nur so lange auf, wie sich die Verformung ändert. Daher beobachten wir bei konstantem Druck keine Spannung. Wenn der Effekt nachlässt, nimmt der Kristall seine ursprüngliche Form wieder an; die Atome nehmen ihre alten Plätze wieder ein, was zu einem schwachen Messsignal mit umgekehrtem Vorzeichen führt. Dies ist im Oszillogramm zu sehen. Da die Spannung nur dann auftritt, wenn sich der Druck ändert, hängt die Größe der Spannung von der Zeit ab, in der die Verformung stattfindet. </p>
+
+  <p class="text">Wie erhält man eine konstante Ausgangsspannung bei einem konstanten Druck? </p>
+
+  <p class="text">Hier schließen wir einen Integrator an die Ausgangsspannung des piezoelektrischen Schiebers an.</p>
+  <p class="text">Bemerkung:</p>
+  <p class="text">Der reziproke piezoelektrische Effekt:</p>
+  <p class="text">Wird ein elektrisches Feld parallel zu einer polaren Achse angelegt, müssen sich die Ladungen entsprechend der Richtung des Feldes verschieben, d.h. das Kristallgitter wird in Richtung der E-Achse gestaucht. Dies kann zum Beispiel für den Betrieb eines Tintenstrahldruckers genutzt werden: Der Tintenstrahl wird durch das Zusammendrücken eines Piezo-Elements aus der Düse geschossen.</p>
+  <p class="text">Ein elektrisches Wechselfeld kann einen Kristall zum Schwingen bringen. Dies ist wichtig für den Betrieb von Quarzuhren</p>
+  
+  
+
+
+  <div class="imgtotextgruppe"> 
+  <p class="text">Bild 1: Der Piezoeffekt auf einem Oszilloskop sichtbar gemacht</p>
+    <img src="oszi.jpeg" style="width:100%;">
+  
+    <p class="text">Bild 2: Quarzkristalle</p>
+    <img src="kristalle.PNG" style="width:100%; float: bottom;">
+  </div>
+
+  <p class="text" style="color:red;"><strong>4) Füllstand Messprinzip:</strong></p>
+
+  <p class="text">
+    Beispielsweise kann bei drucklosen Tanks, in denen Flüssigkeiten gelagert werden und bei denen der Behälter oberhalb der Flüssigkeit frei mit der Umgebung verbunden, also „belüftet“ ist, über einen ebenfalls belüfteten Relativdrucksensor der aktuelle Füllstand als Ableitung aus dem hydrostatischen Druck der Flüssigkeitssäule gemessen werden. Hierbei ist es besonders bei kleineren Tanks und Behältern wichtig, durch die gemeinsame Belüftung von Sensor und Tank den Einfluss des Umgebungsdruckes bei der Messung auszuschalten, da sonst die errechnete Füllhöhe im Tank bei gleicher Menge Flüssigkeit in Abhängigkeit des Umgebungsdruckes schwankt. Diese Schwankung kann aufgrund der aktuellen Wetterlage bis zu +/-30 mbar und aufgrund des Aufstellungsortes (Druckunterschied zwischen Meereshöhe und 2000 m) bis zu 200 mbar betragen.
+    </p>
+  <p class="text">Bei Wasser erzeugen 5 m Füllhöhe im Tank einen hydrostatischen Druck von +500 mbar. </p>
+  <p class="text">Daher würde ein Absolutdrucksensor in Abhängigkeit der Wetterlage bei unveränderter Wassermenge eine Füllhöhe von 4,7 bis 5,3 Metern anzeigen. Da die Füllmenge sehr häufig aus der Tankgeometrie und der gemessenen Füllhöhe berechnet wird, kann sich daraus eine beträchtliche Fehlmessung des Tankinhaltes ergeben.</p>
+  <p class="text">Elektronische Drucksensoren messen üblicherweise die Änderung des Druckes durch die Verformung einer Membran. Wird diese Membran von einer Seite dem Prozessdruck ausgesetzt und auf der anderen Seite „belüftet“, also dem Umgebungsdruck ausgesetzt, so wird die Verformung um genau diesen Umgebungsdruck verringert. Daher ist das Messergebnis eine Druckdifferenz zum Umgebungsdruck.</p>
+
+  <div class="imgtotext"> 
+    <img src="füllstand.PNG" style="width:100%; height:100%;">
+  </div>
+ 
+
+</div>
+
+
+
+
+
+
+    <div id="section4">
+      <h1>konklusion:</h1>
+      
+
+      <p class="text"><strong>Schlussfolgerung:</strong></p>
+
+      <p class="text">Der Einsatz von Drucksensoren ist in vielen verschiedenen Anwendungsbereichen interessant.</p>
+      <p class="text">Heutige Anwendungen, wie zum Beispiel die Automobilindustrie, die Luft- und Raumfahrt und die Medizintechnik, erfordern immer kleinere, anpassungsfähige und hochgenaue Drucksensoren.</p>
+
+      </div>
+
+
+
+
+      <div id="section5">
+        <h1>Quellen:</h1>
+
+        <p class="text"><strong> Datenblätter:</strong></p>
+        
+        <p class="text">Drucksensor Datenblatt: 
+        <button onclick="location.href='Honeywell_Datenblatt.pdf';"> Click here to Download</button></p>
+
+        <p class="text">Operationsverstärkers (741)  Datenblatt: 
+        <button onclick="location.href='lm741.pdf';"> Click here to Download</button></p>
+
+
+        <p class="text">ICL7652B (Chopper Stabilized) Operationsverstärker Datenblatt: 
+        <button onclick="location.href='icl7652.pdf';"> Click here to Download</button></p>
+
+        <p class="text">LabJack U12 Datenblatt: 
+        <button onclick="location.href='labjacku12.pdf';"> Click here to Download</button></p>
+            
+        <p class="text"> <strong>Sonstige Quellen/Webseiten:</strong></p>
+
+
+        
+        <p class="text"><a href="https://www.kistler.com/de/glossar/begriff/piezoresistiver-drucksensor/" style="color:black;"> https://www.kistler.com/de/glossar/begriff/piezoresistiver-drucksensor </a> </p>
+
+        <p class="text"> <a href=https://de.wikipedia.org/wiki/Drucksensor style="color:black;">https://am.heise.de/abo/06_ma_education/ch.1318.046-049.qxp.pdf?wt_mc=intern.abo.make.education.lp_ad.3.3</a></p>
+        
+        <p class="text"> <a href=https://de.wikipedia.org/wiki/Drucksensor style="color:black;"> https://de.wikipedia.org/wiki/Drucksensor </a> </p>
+        
+        <p class="text"> <a href=https://de.wikipedia.org/wiki/Drucksensor style="color:black;">https://www.lernhelfer.de/schuelerlexikon/physik-abitur/artikel/piezoelektrischer-effekt#</a></p>
+
+        <p class="text"> <a href=https://de.wikipedia.org/wiki/Drucksensor style="color:black;">https://www.ni.com/de-de/innovations/white-papers/11/pressure-measurement-overview.html</a></p>
+        <p class="text"> <a href=https://de.wikipedia.org/wiki/Drucksensor style="color:black;"> https://www.mouser.de/ProductDetail/Honeywell/26PCDFA6D?qs=pLJKYPamQJwpcHOilhARNg%3D%3D&gclid=Cj0KCQiAm5ycBhCXARIsAPldzoVhZzhQWghq-5HmbkqkWl0bdUNvyN56OYPHy6skUO48Or-Hm4A1JWMaAsdHEALw_wcB</a></p>
+
+
+      </div>
+
+
+
+      <div id="footer">
+      </div>
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+            <div class="footer">
+              <div class="inner_footer">
+              
+                <div class= "logo_container">
+                  <img src="logo.png">
+                </div>
+                
+                <div class="footer_third">
+
+                  <a href="#">Fakultät: Elektro- und Informationstechnik</a>
+                  <a href="#">Betreuer: Prof Dr Gareth Monkman</a>
+                  <a href="#">OTH-Regensburg</a>
+                  <a href="#">Seybothstr.2</a>
+                  <a href="#">93051 Regensburg </a>
+
+                </div>  
+            
+                <div class="footer_third">
+                  <a href="#">Gruppe 5 </a>
+                  <a href="#">Praktikum AS2</a>
+                  <a href="#">Studiengang Mechatronik</a>
+                  <a href="#">Authors: Adem Wannes - Johanna Riedl</a>
+                  <a href="mailto:hege@example.com">Kontakt:ademwannes1@gmail.com</a></p>
+                  <a href="#">Copyright 2022 - All Right Reserved</a>  
+
+                 </div>
+
+              
+             </div>
+
+            </div>
+          
+
+</body>
+
+</html>
+          
